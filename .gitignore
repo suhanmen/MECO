@@ -1,0 +1,5 @@
+local_README.md
+logs/
+output_*/
+__pycache__/
+*.un~
