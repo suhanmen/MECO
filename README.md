@@ -1,6 +1,6 @@
 # $MEC^3O$: Multi-Expert Consensus for Code Time Complexity Prediction
 
-📖 [Paper](https://~~~~~)
+📖 [Paper](https://arxiv.org/abs/2510.09049)
 
 This repo support the paper "**$MEC^3O$**: Multi-Expert Consensus for Code Time Complexity Prediction".
 
