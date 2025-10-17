@@ -99,8 +99,8 @@ sh ./scripts/main.sh MECO <your_gpu_devices>
 Launches the multi-expert debate phase, where class-specific experts exchange, refine, and justify their predictions.
 Finally, $MEC^3O$ integrates their outputs using a weighted consensus mechanism to produce the final complexity classification.
 
-## 🔖 Citation
-```
+## Citation
+```bibtex
 @misc{HahnLH25,
       title={MEC$^3$O: Multi-Expert Consensus for Code Time Complexity Prediction}, 
       author={Joonghyuk Hahn and Soohan Lim and Yo-Sub Han},
