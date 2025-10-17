@@ -58,7 +58,7 @@ Our comprehensive evaluation of $MEC^3O$ on CodeComplex (Java & Python) yields t
 For detailed quantitative results and ablations, please refer to our paper.
 
 ## 🛠️ Setup
-The datasets used in this research are available in the `data/full` directory:
+The datasets used in this research are provided in the `data/full` directory:
 * `Python.jsonl` — A benchmark split of **4,900 Python programs** from **CodeComplex**, annotated by experts into **seven complexity classes** {$O(1)$, $O(\log n)$, $O(n)$, $O(n\log n)$, $O(n^2)$, $O(n^3)$, $O(2^n)$}. Per-class balanced across the seven classes (uniform counts per class).
 
 * `Java.jsonl` — A benchmark split of **4,900 Java programs** from **CodeComplex**, annotated into the **same seven classes** with the **same per-class balance** as above.
@@ -74,7 +74,7 @@ cd MECO
 
 ### **Step 2: Set up the enviroment**
 ~~~shell
-conda env create --file setting/envirometn.yaml
+conda env create --file setting/enviroment.yaml
 conda activate meco
 ~~~
 
