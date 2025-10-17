@@ -66,7 +66,7 @@ The datasets used in this research are available in the `data/full` directory:
 ## ⚡ Quickstart
 The following scripts guide you through running $MEC^3O$ step by step:
 
-## **Step 1: Clone the Repository**
+### **Step 1: Clone the Repository**
 ~~~shell
 git clone https://github.com/suhanmen/MECO.git
 cd MECO
