@@ -25,7 +25,7 @@
 
 
 ## 🔍 Motivation
-Rule-based heuristics and template-style analysis often fail to generalize: tiny structural/semantic changes (loop bounds, recursion bases, divide-and-conquer splits) can flip the true class (e.g., $O(n)$ ↔ $O(n\log n)$ ↔ $O(n^2)$). We therefore turn to **LLMs** to perform contextual, multi-step reasoning beyond brittle, hand-crafted rules.
+In code time complexity prediction, rule-based heuristics often fail to generalize: tiny structural/semantic changes (loop bounds, recursion bases, divide-and-conquer splits) can flip the true class (e.g., $O(n)$ ↔ $O(n\log n)$ ↔ $O(n^2)$). We therefore turn to **LLMs** to perform contextual, multi-step reasoning beyond brittle, hand-crafted rules.
 
 However, **single-model** LLM methods—zero/few-shot, **CoT**, **self-consistency**, etc.—often suffer **Degeneration-of-Thought (DoT)**: an early hypothesis gets reinforced and counter-evidence is ignored.
 
