@@ -47,6 +47,23 @@ Therefore, we propose $MEC^3O$, which addresses these MAD limitations by preserv
 
 
 ## 📈 Results
+| Model Category | Model | Java Acc. | Java F1 | Python Acc. | Python F1 | Average Acc. | Average F1 |
+|----------------|-------------------------------|:-----:|:----:|:------:|:----:|:------:|:----:|
+| **Single LLM** | Zero-Shot Instruction | 52.00 | 44.00 | 50.20 | 40.60 | 51.10 | 42.30 |
+|                | Seven-Shot Instruction | 56.30 | 48.90 | 48.00 | 39.40 | 52.15 | 44.15 |
+|                | CoT | 54.08 | 45.79 | 52.86 | 44.06 | 53.47 | 44.93 |
+|                | Self-Consistency | 51.84 | 42.45 | 51.22 | 40.73 | 51.53 | 41.59 |
+|                | Reflexion | 53.47 | 43.89 | 52.24 | 41.96 | 52.86 | 42.93 |
+| **Multi-Agent Debate** | Multiagent (Majority) | 54.49 | 50.21 | 52.86 | 49.97 | 53.68 | 50.09 |
+|                     | Multiagent (Judge) | 54.90 | 45.10 | 55.30 | 44.60 | 55.10 | 44.85 |
+|                     | MAD | 46.33 | 39.72 | 40.00 | 36.36 | 43.17 | 38.04 |
+|                     | RECONCILE | 55.92 | 52.79 | 55.31 | 51.11 | 55.62 | 51.95 |
+|                     | CMD | 56.53 | 47.07 | 55.31 | 45.69 | 55.92 | 46.38 |
+| **Commercial LLMs** | GPT-4o | <mark>71.72</mark> | 62.22 | 61.09 | 53.08 | <mark>66.41</mark> | 57.65 |
+|                     | GPT-4o-mini | 64.96 | 55.68 | 56.09 | 48.40 | 60.53 | 52.04 |
+|                     | GPT-o4-mini | 65.12 | <mark>62.31</mark> | <mark>62.31</mark> | <mark>54.23</mark> | 63.72 | <mark>58.27</mark> |
+| **Multi-Expert (Ours)** | <mark>MEC³O</mark> | <mark>61.02</mark> | <mark>61.16</mark> | <mark>57.55</mark> | <mark>53.51</mark> | <mark>59.29</mark> | <mark>57.34</mark> |
+
 Our comprehensive evaluation of $MEC^3O$ on CodeComplex (Java & Python) yields three key findings:
 
 * **Multi-expert beats single & naive MAD** – On **CodeComplex** (Java & Python), $MEC^3O$ outperforms single-model baselines (zero/few-shot, CoT, self-consistency, Reflexion) and naive MAD variants (majority/judge): **Average gains over the best open-source baseline** are **+3.37 pp in Accuracy** and **+5.39 pp in macro-F1**. Per split, improvements reach **up to +4.49 pp Acc. (Java)** and **+8.37 pp F1 (Java)**, while also **remaining competitive with closed models** (e.g., close to GPT-4o-mini in Acc., and near GPT-4o / GPT-o4-mini in macro-F1).
